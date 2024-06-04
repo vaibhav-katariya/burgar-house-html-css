@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: burger;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+@font-face {
+    font-family: burger;
+    src: url(./Raleway-Black.ttf);
+}
+.page1{
+    background-image: url(https://poetic-pothos-84995b.netlify.app/src/assets/img/banner/bg.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    min-height: 100vh;
+    width: 100%;
+}
+.nav{
+    padding: 0 3vw;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav > a{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    font-size: 2.5vw;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #3D2514;
+}
+.nav-part2{
+    display: flex;
+    align-items: end;
+    gap: 1.5vw;
+    flex-direction: column;
+    padding: 0 3vw;
+}
+.nav-part2 > p{
+    font-size: 1.2vw;
+    font-weight: lighter;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    list-style: none;
+    gap: 1.5vw;
+}
+.nav-menu > li > a{
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: #3D2514;
+    font-weight: lighter;
+}
+.nav > i{
+    font-size: 5vw;
+    font-weight: 900;
+    display: none;
+}
+.page1-img{
+    width: 100%;
+}
+.page1-sub-head{
+    border: 2px dashed #3D2514;
+    padding: 1vw;
+    font-size: 1.5vw;
+    width: 80%;
+}
+.page1-head{
+    margin-top: 2vw;
+    text-transform: uppercase;
+    text-shadow: 4px 4px #dadada;
+    color: #3D2514;
+    width: 50%;
+    font-weight: 900;
+    line-height: 5vw;
+}
+.page1-head > span{
+    font-size: 4vw;
+}
+.page2{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5vw 3vw;
+    gap: 2vw;
+
+}
+.page2-part1{
+    background-image: url('b1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1vw;
+    height: 80%;
+    width: 50%;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 2vw;
+}
+.page2-part2{
+    height: 80%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+.page2-bg1{
+    background-image: url('s1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1vw;  
+    height: 50%;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1vw;
+}
+.page2-bg2{
+    background-image: url('s2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1vw;  
+    height: 50%;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1vw;
+}
+.page3{
+    min-height: 100vh;
+}
+.page3-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+}
+.page3-head > h2{
+    font-size: 4vw;
+    color: #3D2514;
+}
+.page3-head > p{
+    color: #3D2514;
+    font-weight: lighter;
+}
+.page4{
+    padding: 5vw 0;
+    min-height: 100vh;
+}
+.page4-content{
+    box-shadow: 1px 10px 15px 0px #dadada;
+}
+.page4-text {
+    color: #3D2514;
+}
+.page4-text > h3,p{
+    font-weight: lighter;
+}
+.page5{
+    min-height: 100vh;
+}
+.page5-head{
+    color: #3D2514;
+}
+.footer{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.5)), url('https://poetic-pothos-84995b.netlify.app/src/assets/img/footer-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+}
+.foot2{
+    align-items: center;
+    padding: 0 3vw;
+}
+.foot2 > i{
+    font-size: 3vw;
+}
+
+
+@media (max-width:600px) {
+    .page1{
+        min-height: 60vh;
+    }
+    .nav > a{
+        font-size: 7vw;
+    }
+    .nav-part2 > p{
+        display: none;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .nav > i{
+        font-size: 7vw;
+        display: block;
+    }
+    .page1-sub-head{
+        margin: auto;
+        text-align: center;
+        padding: 2vw 1vw;
+        font-size: 4vw;
+        width: 100%;
+    }
+    .page1-head{
+        padding: 8vw 0 0 0 ;
+        margin: auto;
+        width: 90%;
+        text-align: center;
+        font-size: 14vw;
+        line-height: 12vw;
+    }
+    .page1-head > span{
+        font-size: 10vw;
+    }
+    .page2{
+        height: 80vh;
+        flex-direction: column;
+    }
+    .page2-part1{
+        height: 50%;
+        width: 100%;
+    }
+    .page2-part2{
+        width: 100%;
+    }
+    .page3{
+        min-height: 70vh;
+    }
+    .page3-head{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-transform: uppercase;
+    }
+    .page3-head > h2{
+        font-size: 10vw;
+        color: #3D2514;
+    }
+    .page3-head > p{
+        color: #3D2514;
+        font-weight: lighter;
+    }
+}
+
